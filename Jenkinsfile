@@ -17,7 +17,7 @@ pipeline {
        }
        stage('Molecule test'){
            steps{
-               sh 'molecule test'
+               sh 'molecule test -s centos'
                cleanWs()
            }
        }
